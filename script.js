@@ -5,26 +5,26 @@
 const togglePassword = document.getElementById('togglePassword');
 const password = document.getElementById('password');
 
-if(togglePassword && password){
+if (togglePassword && password) {
 
-  togglePassword.addEventListener('click', () => {
+    togglePassword.addEventListener('click', () => {
 
-    if(password.type === 'password'){
+        if (password.type === 'password') {
 
-      password.type = 'text';
+            password.type = 'text';
 
-      togglePassword.innerHTML =
-        '<i class="fa-regular fa-eye-slash"></i>';
+            togglePassword.innerHTML =
+                '<i class="fa-regular fa-eye-slash"></i>';
 
-    }else{
+        } else {
 
-      password.type = 'password';
+            password.type = 'password';
 
-      togglePassword.innerHTML =
-        '<i class="fa-regular fa-eye"></i>';
+            togglePassword.innerHTML =
+                '<i class="fa-regular fa-eye"></i>';
 
-    }
-  });
+        }
+    });
 }
 
 // ================================
@@ -33,25 +33,25 @@ if(togglePassword && password){
 
 const loginForm = document.getElementById('loginForm');
 
-if(loginForm){
+if (loginForm) {
 
-  loginForm.addEventListener('submit', function(e){
+    loginForm.addEventListener('submit', function (e) {
 
-    e.preventDefault();
+        e.preventDefault();
 
-    const email = document.getElementById('email').value;
-    const pass = password.value;
+        const email = document.getElementById('email').value;
+        const pass = password.value;
 
-    if(email === '' || pass === ''){
+        if (email === '' || pass === '') {
 
-      alert('Semua field wajib diisi!');
-      return;
+            alert('Semua field wajib diisi!');
+            return;
 
-    }
+        }
 
-    alert('Login berhasil!');
+        alert('Login berhasil!');
 
-  });
+    });
 }
 
 // ================================
@@ -61,27 +61,27 @@ if(loginForm){
 const toggleOtp = document.getElementById('toggleOtp');
 const otpInput = document.getElementById('otp');
 
-if(toggleOtp && otpInput){
+if (toggleOtp && otpInput) {
 
-  toggleOtp.addEventListener('click', () => {
+    toggleOtp.addEventListener('click', () => {
 
-    if(otpInput.type === 'password'){
+        if (otpInput.type === 'password') {
 
-      otpInput.type = 'text';
+            otpInput.type = 'text';
 
-      toggleOtp.innerHTML =
-        '<i class="fa-regular fa-eye-slash"></i>';
+            toggleOtp.innerHTML =
+                '<i class="fa-regular fa-eye-slash"></i>';
 
-    }else{
+        } else {
 
-      otpInput.type = 'password';
+            otpInput.type = 'password';
 
-      toggleOtp.innerHTML =
-        '<i class="fa-regular fa-eye"></i>';
+            toggleOtp.innerHTML =
+                '<i class="fa-regular fa-eye"></i>';
 
-    }
+        }
 
-  });
+    });
 
 }
 
@@ -91,24 +91,24 @@ if(toggleOtp && otpInput){
 
 const forgotForm = document.getElementById('forgotForm');
 
-if(forgotForm){
+if (forgotForm) {
 
-  forgotForm.addEventListener('submit', function(e){
+    forgotForm.addEventListener('submit', function (e) {
 
-    e.preventDefault();
+        e.preventDefault();
 
-    const email = document.getElementById('email').value;
-    const otp = otpInput.value;
+        const email = document.getElementById('email').value;
+        const otp = otpInput.value;
 
-    if(email === '' || otp === ''){
+        if (email === '' || otp === '') {
 
-      alert('Semua field wajib diisi!');
-      return;
+            alert('Semua field wajib diisi!');
+            return;
 
-    }
+        }
 
-    alert('Password berhasil direset!');
+        alert('Password berhasil direset!');
 
-  });
+    });
 
 }
