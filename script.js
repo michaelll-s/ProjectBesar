@@ -106,7 +106,8 @@ if (forgotForm) {
 
         }
 
-        alert('Password berhasil direset!');
+        alert('Kode OTP benar');
+        window.location.href = 'changePassword.html'
 
     });
 
