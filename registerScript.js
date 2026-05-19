@@ -56,14 +56,14 @@ if (toggleConfirmed && confirmedPass) {
             confirmedPass.type = 'text';
 
             toggleConfirmed.innerHTML =
-                '<i class="fa-regular fa-eye-slash"></i>';
+                '<i class="fa-regular fa-eye"></i>';
 
         } else {
 
             confirmedPass.type = 'password';
 
             toggleConfirmed.innerHTML =
-                '<i class="fa-regular fa-eye"></i>';
+                '<i class="fa-regular fa-eye-slash"></i>';
 
         }
     });
